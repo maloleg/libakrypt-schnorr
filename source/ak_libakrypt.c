@@ -251,6 +251,11 @@
     return ak_false;
   }
 
+  if( ak_libakrypt_test_sign_schnorr() != ak_true ) {
+    ak_error_message( ak_error_get_value(), __func__ , "incorrect testing of schnorr digital signature" );
+    return ak_false;
+  }
+
   if( audit >= ak_log_maximum )
    ak_error_message( ak_error_ok, __func__ , "testing asymmetric mechanisms ended successfully" );
 

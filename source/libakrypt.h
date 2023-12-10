@@ -202,6 +202,8 @@ extern "C" {
  dll_export bool_t ak_libakrypt_test_acpkm( void );
 /*! \brief Выполнение тестовых примеров для алгоритмов выработки и проверки электронной подписи */
  dll_export bool_t ak_libakrypt_test_sign( void );
+ /*! \brief Выполнение тестовых примеров для алгоритмов выработки и проверки электронной подписи Шнорра */
+ dll_export bool_t ak_libakrypt_test_sign_schnorr( void );
 
 /** @}*//** @}*/
 
